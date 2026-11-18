@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Model Training Lab – Finance & Audit (Gemini & Copilot)</title>
+  <meta name="description" content="A practical hands-on lab teaching finance, accounting, and internal audit professionals how to train generative AI models using supervised and unsupervised datasets in Google Gemini and Microsoft 365 Copilot.">
+  <link rel="stylesheet" href="css/training-lab.css">
+</head>
+<body>
+
+  <!-- Application Header -->
+  <header class="app-header">
+    <div class="header-inner">
+      <!-- Brand & Title -->
+      <div class="brand-section">
+        <div class="brand-logo-icon">🤖</div>
+        <div class="brand-text">
+          <h1>AI Model Training Lab <span style="font-weight: 300; opacity: 0.85;">– Finance & Audit</span></h1>
+          <p>Supervised & Unsupervised Learning with Google Gemini & Microsoft 365 Copilot</p>
+        </div>
+      </div>
+
+      <!-- Quick Actions -->
+      <div class="header-actions">
+        <a href="AI_Model_Training_Lab.pdf" download="AI_Model_Training_Lab.pdf" class="nav-pill-btn" style="background: rgba(16, 185, 129, 0.2); border-color: #10b981; color: #a7f3d0;" title="Download Full 18-Page PDF Lab Manual">
+          <span>📑</span> Download PDF Manual
+        </a>
+        <a href="LAB_INSTRUCTIONS_FINANCE_AUDIT_AI_TRAINING.md" download="LAB_INSTRUCTIONS_FINANCE_AUDIT_AI_TRAINING.md" class="nav-pill-btn" style="background: rgba(56, 189, 248, 0.2); border-color: #38bdf8;" title="Download Full Printable Markdown Lab Instructions">
+          <span>📄</span> Markdown Manual
+        </a>
+        <a href="https://github.com/Archita14Singh/genai-model-training-lab" target="_blank" rel="noopener noreferrer" class="nav-pill-btn" title="View Source Code on GitHub">
+          <span>⭐</span> GitHub Repository
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Application Body -->
+  <main class="main-wrapper">
+
+    <!-- Hero Guidance Banner -->
+    <div class="hero-banner">
+      <div class="hero-title">
+        <h2>Hands-On Practical Lab: Teaching AI Your Institutional Audit Rules</h2>
+        <p>A practical, non-technical laboratory for finance, accounting, and internal audit professionals. Master Supervised Learning (training models with labeled answer keys) and Unsupervised Learning (discovering hidden patterns with intuitive K-Means clustering) in Google Gemini & Microsoft 365 Copilot.</p>
+      </div>
+      <div class="hero-badges">
+        <span class="badge-corp">Beginner to Intermediate</span>
+        <span class="badge-corp badge-supervised">Supervised Grounding</span>
+        <span class="badge-corp badge-unsupervised">Unsupervised K-Means</span>
+      </div>
+    </div>
+
+    <!-- 1. Foundations & Platform Environment Setup (Gemini & M365 Copilot) -->
+    <section id="foundations-container"></section>
+
+    <!-- 2. Two-Track Learning Switcher Tabs -->
+    <section class="track-switcher-card">
+      <div class="track-switcher-intro">
+        <h3>Choose Your Model Training Track:</h3>
+        <p>Select either track below to begin. You can switch between tracks at any time.</p>
+      </div>
+      <div class="track-tabs-grid">
+        <button id="btn-track-supervised" class="track-tab-btn active" type="button" aria-label="Switch to Supervised Learning Track">
+          <div class="track-tab-header">
+            <span class="track-tab-icon">🏷️</span>
+            <span class="badge-corp badge-supervised">Answer Key Method</span>
+          </div>
+          <div class="track-tab-title">Track 1: Supervised Learning (Labeled Data)</div>
+          <div class="track-tab-subtitle">Teach AI your company's exact audit rules using 25 past reviewed transactions with ground truth labels.</div>
+        </button>
+
+        <button id="btn-track-unsupervised" class="track-tab-btn" type="button" aria-label="Switch to Unsupervised Learning Track">
+          <div class="track-tab-header">
+            <span class="track-tab-icon">🔍</span>
+            <span class="badge-corp badge-unsupervised">Pattern Discovery</span>
+          </div>
+          <div class="track-tab-title">Track 2: Unsupervised Learning (K-Means)</div>
+          <div class="track-tab-subtitle">Discover hidden anomaly clusters in raw unlabeled data (K = 3), followed by forensic audit investigation.</div>
+        </button>
+      </div>
+    </section>
+
+    <!-- 3. Learning Track Workspaces -->
+    <div id="active-track-container">
+      <section id="supervised-track-container" class="track-pane"></section>
+      <section id="unsupervised-track-container" class="track-pane" style="display: none;"></section>
+    </div>
+
+  </main>
+
+  <!-- In-App Dataset Preview Modal -->
+  <div id="dataset-preview-modal" class="modal-overlay is-hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modal-dataset-title">In-App Dataset Preview</h3>
+        <button class="modal-close-btn modal-close-trigger">&times;</button>
+      </div>
+      <div class="modal-body" id="modal-dataset-body"></div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/training-data.js"></script>
+  <script src="js/training-app.js"></script>
+</body>
+</html>
